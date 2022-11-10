@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: #222f3e; */
+    background: url('./bg1.jfif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.container{
+    position: absolute;
+    top: 100px;
+    left: 25%;
+    width: 50vw;
+    height: 70vh;
+    /* background-color: antiquewhite; */
+    border-radius: 5px;
+    overflow: hidden;
+    color: #fff;
+    letter-spacing: 0.5px;
+    display: grid;
+    place-items: center;
+    backdrop-filter: blur(20px);
+    /* box-shadow: 0px 0px 30px rgb(202, 172, 81); */
+    animation: glow infinite 0.6s;
+}
+@keyframes glow {
+    from{
+        box-shadow: 0px 0px 30px rgb(202, 172, 81);
+    }
+    to{
+        box-shadow: 0px 0px 30px rgb(255, 255, 255);
+    }
+}
+
+
+.inner{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 70%;
+    /* background: #fff; */
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    font-size: 1.3rem;
+}
+.text{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+.text .fas {
+    color: rgb(159, 151, 151);
+    font-size: xx-large;
+    margin-left: 20px;
+}
+.text .quote{
+    padding: 10px 30px;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Island Moments', cursive;
+    /* border: 2px solid red; */
+}
+.text .author{
+    /* border: 2px solid red; */
+    width: 100%;
+    text-align: right;
+    padding: 20px 20px;
+    font-size: 10px;
+    font-weight: 100;
+    color: rgb(138, 133, 133);
+}
+.button{
+    background-color: rgb(3, 91, 138);
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    position: absolute;
+    top:90%;
+    color: #fff;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.newQ{
+    padding-top: 5px;
+    /* font-size: 15px; */
+}
+
+h1{
+    text-align: center;
+    color: transparent;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    /* text-shadow: 5px 5px 3px rgb(255, 255, 255); */
+    animation: gow infinite 2s;
+}
+@keyframes gow {
+    from{
+        text-shadow: 5px 5px 1px rgb(255, 255, 255);
+    }
+    to{
+        text-shadow: 5px 5px 5px rgb(32, 144, 255);
+    }
+}
+
+
+
+@media screen and (max-width: 987px){
+
+}
+@media screen and (max-width: 987px) {
+
+    .container{
+        left: 9%;
+        width: 80vw;
+    }
+    .text .fas {
+        font-size: x-large;
+    }
+    .text .quote{
+        font-size: 35px;
+    }
+    .text .author{
+        font-size: 20px;
+    }
+    .newQ {
+        padding-top: 2px;
+        font-size: 15px ;
+    }
+  }
+
+@media screen and (max-width: 473px){
+    .container{
+        margin-top: 50px;
+    }
+    .text .quote {
+        padding: 15px 5px;
+        font-size: 30px;
+    }
+    .text .author{
+        font-size: 15px;
+    }
+    .newQ {
+        padding-top: 5px;
+        font-size: 25px ;
+    }
+}
+
+@media screen and (max-width: 351px){
+    h1{
+        font-size: 22px;
+    }
+    .container{
+        margin-top: 30px;
+        left: 5%;
+        width: 90vw;
+    }
+    .text .quote {
+        padding: 15px 0px;
+        font-size: 28px;
+    }
+    .text .author{
+        font-size: 10px;
+    }
+    .newQ {
+        padding-top: 2px;
+        font-size: 15px ;
+    }
+}
+@media screen and (max-width: 239px){
+    h1{
+        font-size: 15px;
+    }
+}
